@@ -1767,12 +1767,6 @@ int nglPresent_Hook(void)
 		s_NGLMenu->OnHide = &NGLMenuOnHide;
 		s_NGLMenu->OnShow = &NGLMenuOnShow;
 	}
-	if (!IsInGame())
-	{
-		// the text will be displayed at the beginning, for a short period of time.
-		// this is just an indicator to let the user know that the menu is working and running.
-		
-	}
 	else
 	{
 		s_NGLMenu->Draw();
