@@ -32,10 +32,6 @@ int nglPresent_Hook(void)
 
 	if (!world::has_inst() || world::inst()->hero_entity == nullptr)
 	{
-		// the text will be displayed at the beginning, for a short period of time.
-		// this is just an indicator to let the user know that the menu is working and running.
-		nglDrawText("RaimiHook is running", RGBA_TO_INT(255, 255, 255, 255), 10.0f, 10.0f, 1.0f, 1.0f);
-	}
 	else if (s_DebugMenu != nullptr)
 	{
 		s_DebugMenu->draw();
