@@ -33,7 +33,7 @@ static bool LoadD3d9()
 {
 	wchar_t d3d9_path[MAX_PATH];
 	GetSystemDirectoryW(d3d9_path, MAX_PATH);
-	wcscat(d3d9_path, L"\\d3d9.dll");
+	wcscat(d3d9_path, L"\\d3d9vk.dll");
 	hD3d9Original = LoadLibraryW(d3d9_path);
 	
 	return (hD3d9Original != nullptr);
